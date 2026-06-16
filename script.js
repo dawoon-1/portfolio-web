@@ -3,42 +3,66 @@ const projects = [
     {
         id: 1,
         title: "천원의 아침밥 정보 제공 시스템",
-        description: "대학생들이 교내 천원의 아침밥 운영 정보와 식단을 쉽게 확인할 수 있도록 제작한 모바일 애플리케이션입니다. 매일 아침 메뉴를 확인하고 운영 시간 및 공지사항을 실시간으로 파악할 수 있어 학생들의 복지 접근성을 높였습니다.",
+        category: "Android App",
+        description: "교내 '천원의 아침밥' 운영 정보를 학생들이 쉽고 빠르게 확인할 수 있도록 기획한 복지 정보 접근성 향상 프로젝트입니다. 파편화되어 있던 식단, 시간, 공지사항을 하나의 플랫폼으로 통합했습니다.",
         tech: ["Java", "Android Studio", "Room Database"],
-        role: "UI 설계 및 데이터 관리 기능 구현",
-        features: ["실시간 식단 조회", "운영시간 및 위치 안내", "공지사항 푸시 알림", "관심 메뉴 즐겨찾기"],
-        learned: "사용자 중심의 UI/UX 설계의 중요성을 깨달았으며, 로컬 데이터베이스(Room)를 활용한 효율적인 데이터 관리 기법을 익혔습니다.",
-        img: "https://via.placeholder.com/600x400?text=Breakfast+System+Detail"
+        role: "사용자 인터페이스(UI) 설계 및 로컬 데이터 영속성 관리 기능 구현",
+        features: [
+            "실시간 일일/주간 식단 정보 조회",
+            "운영 시간 및 위치 정보 안내",
+            "중요 공지사항 리스트업",
+            "Room DB를 활용한 오프라인 식단 데이터 캐싱"
+        ],
+        learned: "사용자 관점에서 필요한 정보를 선별하는 UI/UX 기획 역량을 쌓았으며, 특히 안드로이드의 Fragment와 RecyclerView를 활용한 효율적인 화면 구성 방식을 깊이 있게 학습했습니다.",
+        img: "https://images.unsplash.com/photo-1494390248081-4e521a5940db?auto=format&fit=crop&w=800&q=80"
     },
     {
         id: 2,
-        title: "스마트 홈 오토메이션 시스템",
-        description: "침입 감지 및 원격 모니터링 기능을 제공하는 IoT 기반 스마트 보안 시스템입니다. ESP32-CAM과 다양한 센서를 활용하여 집안의 상태를 실시간으로 감시하고, 이상 징후 발생 시 사용자에게 즉각 알림을 보냅니다.",
-        tech: ["Arduino", "ESP32-CAM", "Blynk"],
-        role: "하드웨어 설계, 센서 연동 및 카메라 스트리밍 구현",
-        features: ["PIR 센서를 통한 침입 감지", "침입 발생 시 사진 촬영 및 클라우드 전송", "Blynk 앱을 통한 원격 제어 및 모니터링", "실시간 주변 환경 데이터(온습도) 측정"],
-        learned: "하드웨어와 소프트웨어 간의 통신 프로세스를 깊이 있게 이해하게 되었으며, 실시간 시스템에서의 데이터 신뢰성 확보 방법을 배웠습니다.",
-        img: "https://via.placeholder.com/600x400?text=Smart+Home+Detail"
+        title: "스마트 홈 오토메이션 보안 시스템",
+        category: "IoT System",
+        description: "침입 감지 및 원격 모니터링을 지원하는 저비용 고효율 스마트 홈 보안 솔루션입니다. 물리적인 하드웨어 센서와 모바일 앱을 연동하여 실시간 보안 알림 시스템을 구축했습니다.",
+        tech: ["Arduino", "ESP32-CAM", "Blynk", "Wi-Fi Communication"],
+        role: "하드웨어 회로 설계 및 ESP32-CAM 기반 영상 스트리밍/캡처 로직 구현",
+        features: [
+            "PIR 센서를 활용한 침입자 감지 및 경고음 출력",
+            "침입 감지 시 즉각적인 사진 촬영 및 모바일 푸시 알림",
+            "Blynk 앱을 통한 경계 모드 원격 설정/해제",
+            "Wi-Fi 기반의 실시간 현장 모니터링"
+        ],
+        learned: "임베디드 장치와 클라우드 서버 간의 Wi-Fi 통신 구조를 이해하게 되었으며, 하드웨어 제약 조건 속에서 소프트웨어를 최적화하는 경험을 쌓았습니다.",
+        img: "https://images.unsplash.com/photo-1558002038-1055907df827?auto=format&fit=crop&w=800&q=80"
     },
     {
         id: 3,
-        title: "TripFlow",
-        description: "사용자의 여행 계획을 효율적으로 관리하고 최적의 경로를 탐색할 수 있는 여행 일정 관리 애플리케이션입니다. 복잡한 여행 일정을 날짜별, 장소별로 한눈에 정리할 수 있도록 도와줍니다.",
+        title: "TripFlow: 여행 일정 관리 앱",
+        category: "Android App",
+        description: "여행의 모든 순간을 체계적으로 계획하고 지도로 확인할 수 있는 올인원 일정 관리 서비스입니다. 장소 탐색과 일정 기록의 연결성을 높이는 데 집중했습니다.",
         tech: ["Java", "Android Studio", "Room Database", "Naver Map API"],
-        role: "프로젝트 총괄 기획, UI/UX 설계, 지도 API 연동",
-        features: ["네이버 지도 기반 장소 검색 및 마커 표시", "드래그 앤 드롭을 이용한 일정 순서 변경", "여행 경비 자동 계산", "오프라인 모드 지원 (Room DB 활용)"],
-        learned: "외부 API(지도) 연동 기술을 습득하였으며, 대규모 사용자 데이터를 처리하기 위한 데이터 구조 설계 능력을 향상시켰습니다.",
-        img: "https://via.placeholder.com/600x400?text=TripFlow+Detail"
+        role: "프로젝트 전체 기획, UI/UX 상세 설계 및 지도 API 기반 위치 서비스 구현",
+        features: [
+            "네이버 지도 API 연동을 통한 장소 탐색 및 마커 표시",
+            "드래그 앤 드롭 방식의 직관적인 일정 추가 및 순서 관리",
+            "가고 싶은 장소를 저장하는 위시리스트 기능",
+            "일정별 메모 및 장소 상세 정보 저장"
+        ],
+        learned: "외부 API 연동 과정에서의 트러블슈팅 경험을 쌓았으며, 사용자 여정 지도(User Journey Map)를 고려한 UX 설계의 중요성을 깨달았습니다.",
+        img: "https://images.unsplash.com/photo-1488646953014-85cb44e25828?auto=format&fit=crop&w=800&q=80"
     },
     {
         id: 4,
         title: "AI 집중도 분석 코치",
-        description: "Computer Vision 기술을 활용하여 사용자의 학습 태도를 분석하고 집중도를 수치화하는 인공지능 시스템입니다. 웹캠을 통해 사용자의 자세와 행동을 분석하여 졸음이나 딴짓을 감지하고 경고를 줍니다.",
+        category: "AI / Computer Vision",
+        description: "웹캠 영상 분석을 통해 사용자의 학습 집중도를 실시간으로 측정하고 피드백을 제공하는 AI 시스템입니다. 딥러닝 모델과 영상 처리 알고리즘을 결합하여 비대면 학습 환경의 집중도 저하 문제를 해결하고자 했습니다.",
         tech: ["Python", "YOLOv8", "OpenCV", "MediaPipe"],
-        role: "AI 모델 연동 및 집중도 분석 알고리즘 구현",
-        features: ["YOLOv8 기반 객체 탐지 (스마트폰 등)", "MediaPipe를 이용한 안구 추적 및 눈 감김 감지", "실시간 집중도 스코어링 대시보드", "학습 리포트 생성"],
-        learned: "최신 AI 모델을 실무 프로젝트에 적용하는 경험을 쌓았으며, 영상 처리 성능 최적화의 중요성을 배웠습니다.",
-        img: "https://via.placeholder.com/600x400?text=AI+Coach+Detail"
+        role: "객체 탐지 모델 연동 및 EAR(Eye Aspect Ratio) 기반 집중도 분석 알고리즘 구현",
+        features: [
+            "YOLOv8을 활용한 사람 및 스마트폰 사용 여부 실시간 탐지",
+            "MediaPipe 기반 안구 랜드마크 추출 및 눈 감김(졸음) 분석",
+            "고개 방향(Pose Estimation) 분석을 통한 주의 이탈 감지",
+            "누적 데이터를 바탕으로 한 집중도 점수화 및 통계 리포트"
+        ],
+        learned: "Computer Vision 기술이 실생활 문제를 해결하는 강력한 도구가 될 수 있음을 체감했으며, Python 기반의 데이터 분석 및 시각화 프로세스를 익힐 수 있었습니다.",
+        img: "https://images.unsplash.com/photo-1507146426996-ef05306b995a?auto=format&fit=crop&w=800&q=80"
     }
 ];
 
@@ -134,7 +158,7 @@ filterBtns.forEach(btn => {
         const filter = btn.getAttribute('data-filter');
 
         projectCards.forEach(card => {
-            if (filter === 'all' || card.getAttribute('data-category') === filter) {
+            if (filter === 'all' || card.getAttribute('data-category').toLowerCase().includes(filter)) {
                 card.style.display = 'block';
                 setTimeout(() => card.style.opacity = '1', 10);
             } else {
@@ -156,7 +180,7 @@ function openModal(id) {
 
     modalBody.innerHTML = `
         <div class="modal-header">
-            <span class="category" style="color: var(--primary-color); font-weight: 700; text-transform: uppercase; font-size: 0.9rem;">${project.tech[0]}</span>
+            <span class="category" style="color: var(--primary-color); font-weight: 700; text-transform: uppercase; font-size: 0.9rem;">${project.category}</span>
             <h2>${project.title}</h2>
         </div>
         <img src="${project.img}" alt="${project.title}" class="modal-img">
@@ -210,7 +234,7 @@ function updateActiveNavLink() {
     sections.forEach(section => {
         const sectionTop = section.offsetTop;
         const sectionHeight = section.clientHeight;
-        if (pageYOffset >= sectionTop - 150) {
+        if (window.pageYOffset >= sectionTop - 150) {
             current = section.getAttribute('id');
         }
     });
