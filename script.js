@@ -183,7 +183,6 @@ function openModal(id) {
             <span class="category" style="color: var(--primary-color); font-weight: 700; text-transform: uppercase; font-size: 0.9rem;">${project.category}</span>
             <h2>${project.title}</h2>
         </div>
-        <img src="${project.img}" alt="${project.title}" class="modal-img">
         <div class="modal-info-grid">
             <div class="modal-desc">
                 <h3>프로젝트 설명</h3>
