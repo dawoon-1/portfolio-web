@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UP AND DOWN | Portfolio</title>
+    <!-- Fonts -->
+    <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="light-mode">
+    <!-- Header / Navigation -->
+    <header id="header">
+        <nav class="container">
+            <div class="logo">
+                <a href="#hero">UP AND <span>DOWN</span></a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#experience" class="nav-link">Experience</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="nav-btns">
+                <button id="dark-mode-toggle" aria-label="Toggle Dark Mode">
+                    <i class="fas fa-moon"></i>
+                </button>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="hero">
+            <div class="hero-bg"></div>
+            <div class="container hero-content">
+                <h2 class="reveal">Software Engineering Student</h2>
+                <h1 class="reveal">UP AND <span>DOWN</span></h1>
+                <p class="reveal">"Android, AI, IoT 기술을 활용하여 실생활 문제를 해결하는 개발자"</p>
+                <div class="hero-btns reveal">
+                    <a href="#projects" class="btn btn-primary">프로젝트 보기</a>
+                    <a href="https://github.com" target="_blank" class="btn btn-outline"><i class="fab fa-github"></i> GitHub</a>
+                </div>
+            </div>
+            <div class="scroll-down">
+                <a href="#about"><i class="fas fa-chevron-down"></i></a>
+            </div>
+        </section>
+
+        <!-- About Me Section -->
+        <section id="about" class="section">
+            <div class="container">
+                <h2 class="section-title reveal">About Me</h2>
+                <div class="about-grid">
+                    <div class="about-text reveal">
+                        <p>소프트웨어학과 3학년에 재학 중이며 Android 앱 개발, AI 기반 컴퓨터 비전, IoT 시스템 개발에 관심을 가지고 있습니다.</p>
+                        <p>실생활 문제를 해결하는 소프트웨어를 개발하기 위해 다양한 프로젝트를 수행하고 있으며, 팀 프로젝트와 발표 경험을 통해 협업 능력 또한 향상시키고 있습니다.</p>
+                    </div>
+                    <div class="about-cards reveal">
+                        <div class="info-card">
+                            <i class="fas fa-graduation-cap"></i>
+                            <h3>전공</h3>
+                            <p>소프트웨어학과 3학년</p>
+                        </div>
+                        <div class="info-card">
+                            <i class="fas fa-heart"></i>
+                            <h3>관심 분야</h3>
+                            <p>Android, AI, IoT</p>
+                        </div>
+                        <div class="info-card">
+                            <i class="fas fa-bullseye"></i>
+                            <h3>개발 목표</h3>
+                            <p>실생활 문제 해결사</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Tech Stack Section -->
+        <section id="skills" class="section bg-light">
+            <div class="container">
+                <h2 class="section-title reveal">Tech Stack</h2>
+                <div class="skills-grid">
+                    <!-- Programming Languages -->
+                    <div class="skill-category reveal">
+                        <h3><i class="fas fa-code"></i> Programming Language</h3>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>Java</span>
+                                <span>85%</span>
+                            </div>
+                            <div class="progress-bar"><div class="progress" style="width: 85%"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>Python</span>
+                                <span>80%</span>
+                            </div>
+                            <div class="progress-bar"><div class="progress" style="width: 80%"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>C++</span>
+                                <span>70%</span>
+                            </div>
+                            <div class="progress-bar"><div class="progress" style="width: 70%"></div></div>
+                        </div>
+                    </div>
+
+                    <!-- Mobile -->
+                    <div class="skill-category reveal">
+                        <h3><i class="fas fa-mobile-alt"></i> Mobile Development</h3>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>Android Studio</span>
+                                <span>80%</span>
+                            </div>
+                            <div class="progress-bar"><div class="progress" style="width: 80%"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>Room Database</span>
+                                <span>75%</span>
+                            </div>
+                            <div class="progress-bar"><div class="progress" style="width: 75%"></div></div>
+                        </div>
+                    </div>
+
+                    <!-- AI / CV -->
+                    <div class="skill-category reveal">
+                        <h3><i class="fas fa-brain"></i> AI / Computer Vision</h3>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>YOLOv8</span>
+                                <span>75%</span>
+                            </div>
+                            <div class="progress-bar"><div class="progress" style="width: 75%"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>OpenCV</span>
+                                <span>70%</span>
+                            </div>
+                            <div class="progress-bar"><div class="progress" style="width: 70%"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>MediaPipe</span>
+                                <span>65%</span>
+                            </div>
+                            <div class="progress-bar"><div class="progress" style="width: 65%"></div></div>
+                        </div>
+                    </div>
+
+                    <!-- IoT -->
+                    <div class="skill-category reveal">
+                        <h3><i class="fas fa-microchip"></i> IoT</h3>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>Arduino</span>
+                                <span>75%</span>
+                            </div>
+                            <div class="progress-bar"><div class="progress" style="width: 75%"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>ESP32-CAM</span>
+                                <span>70%</span>
+                            </div>
+                            <div class="progress-bar"><div class="progress" style="width: 70%"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>Blynk</span>
+                                <span>80%</span>
+                            </div>
+                            <div class="progress-bar"><div class="progress" style="width: 80%"></div></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="section">
+            <div class="container">
+                <h2 class="section-title reveal">Projects</h2>
+                
+                <div class="filter-btns reveal">
+                    <button class="filter-btn active" data-filter="all">All</button>
+                    <button class="filter-btn" data-filter="android">Android</button>
+                    <button class="filter-btn" data-filter="iot">IoT</button>
+                    <button class="filter-btn" data-filter="ai">AI</button>
+                </div>
+
+                <div class="projects-grid">
+                    <!-- Project 1 -->
+                    <div class="project-card reveal" data-category="android">
+                        <div class="project-img">
+                            <div class="overlay">
+                                <button class="btn-detail" onclick="openModal(1)">자세히 보기</button>
+                            </div>
+                            <img src="https://via.placeholder.com/400x250?text=Breakfast+System" alt="천원의 아침밥">
+                        </div>
+                        <div class="project-info">
+                            <span class="category">Android</span>
+                            <h3>천원의 아침밥 정보 제공 시스템</h3>
+                            <p>교내 천원의 아침밥 운영 정보와 식단을 쉽게 확인할 수 있는 앱</p>
+                            <div class="tech-tags">
+                                <span>Java</span>
+                                <span>Android Studio</span>
+                                <span>Room</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 2 -->
+                    <div class="project-card reveal" data-category="iot">
+                        <div class="project-img">
+                            <div class="overlay">
+                                <button class="btn-detail" onclick="openModal(2)">자세히 보기</button>
+                            </div>
+                            <img src="https://via.placeholder.com/400x250?text=Smart+Home" alt="스마트 홈">
+                        </div>
+                        <div class="project-info">
+                            <span class="category">IoT</span>
+                            <h3>스마트 홈 오토메이션 시스템</h3>
+                            <p>침입 감지 및 원격 모니터링 기능을 제공하는 보안 시스템</p>
+                            <div class="tech-tags">
+                                <span>Arduino</span>
+                                <span>ESP32-CAM</span>
+                                <span>Blynk</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 3 -->
+                    <div class="project-card reveal" data-category="android">
+                        <div class="project-img">
+                            <div class="overlay">
+                                <button class="btn-detail" onclick="openModal(3)">자세히 보기</button>
+                            </div>
+                            <img src="https://via.placeholder.com/400x250?text=TripFlow" alt="TripFlow">
+                        </div>
+                        <div class="project-info">
+                            <span class="category">Android</span>
+                            <h3>TripFlow</h3>
+                            <p>효율적인 여행 일정 관리 및 장소 검색 애플리케이션</p>
+                            <div class="tech-tags">
+                                <span>Java</span>
+                                <span>Naver Map API</span>
+                                <span>Room</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 4 -->
+                    <div class="project-card reveal" data-category="ai">
+                        <div class="project-img">
+                            <div class="overlay">
+                                <button class="btn-detail" onclick="openModal(4)">자세히 보기</button>
+                            </div>
+                            <img src="https://via.placeholder.com/400x250?text=Concentration+Coach" alt="집중도 분석 코치">
+                        </div>
+                        <div class="project-info">
+                            <span class="category">AI</span>
+                            <h3>AI 집중도 분석 코치</h3>
+                            <p>실시간으로 사용자의 집중 상태를 분석하는 시스템</p>
+                            <div class="tech-tags">
+                                <span>Python</span>
+                                <span>YOLOv8</span>
+                                <span>OpenCV</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience Section -->
+        <section id="experience" class="section bg-light">
+            <div class="container">
+                <h2 class="section-title reveal">Experience</h2>
+                <div class="timeline">
+                    <div class="timeline-item reveal">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-date">2024</div>
+                        <div class="timeline-content">
+                            <h3>소프트웨어공학 팀 프로젝트</h3>
+                            <p>팀 협업 및 소프트웨어 개발 생명주기(SDLC) 이해</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item reveal">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-date">2024</div>
+                        <div class="timeline-content">
+                            <h3>운영체제 팀 프로젝트</h3>
+                            <p>프로세스 관리 및 시스템 프로그래밍 심화 학습</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item reveal">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-date">2023 - 2024</div>
+                        <div class="timeline-content">
+                            <h3>Android 앱 개발 & IoT 프로젝트</h3>
+                            <p>실생활 밀착형 서비스 개발 경험 다수</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item reveal">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-date">2023 - 현재</div>
+                        <div class="timeline-content">
+                            <h3>AI & Computer Vision 학습</h3>
+                            <p>YOLO, OpenCV 등을 활용한 객체 인식 기술 습득</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="section">
+            <div class="container">
+                <h2 class="section-title reveal">Contact</h2>
+                <div class="contact-grid reveal">
+                    <div class="contact-card">
+                        <i class="fab fa-github"></i>
+                        <h3>GitHub</h3>
+                        <p><a href="https://github.com" target="_blank">github.com/dawoon-1</a></p>
+                    </div>
+                    <div class="contact-card">
+                        <i class="fas fa-envelope"></i>
+                        <h3>Email</h3>
+                        <p>g5ohno5@naver.com</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 UP AND DOWN. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Back to Top -->
+    <button id="back-to-top" aria-label="Back to Top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Project Modal -->
+    <div id="project-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <div id="modal-body">
+                <!-- Content will be injected by JS -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Script -->
+    <script src="script.js"></script>
+</body>
+</html>
