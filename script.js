@@ -5,13 +5,13 @@ const projects = [
         title: "천원의 아침밥 정보 제공 시스템",
         category: "Android App",
         description: "교내 '천원의 아침밥' 운영 정보를 학생들이 쉽고 빠르게 확인할 수 있도록 기획한 복지 정보 접근성 향상 프로젝트입니다. 파편화되어 있던 식단, 시간, 공지사항을 하나의 플랫폼으로 통합했습니다.",
-        tech: ["Java", "Android Studio", "Room Database"],
+        tech: ["Java", "Android Studio", "FireBase"],
         role: "사용자 인터페이스(UI) 설계 및 로컬 데이터 영속성 관리 기능 구현",
         features: [
             "실시간 일일/주간 식단 정보 조회",
             "운영 시간 및 위치 정보 안내",
             "중요 공지사항 리스트업",
-            "Room DB를 활용한 오프라인 식단 데이터 캐싱"
+            "FireBase를 활용한 오프라인 식단 데이터 캐싱"
         ],
         learned: "사용자 관점에서 필요한 정보를 선별하는 UI/UX 기획 역량을 쌓았으며, 특히 안드로이드의 Fragment와 RecyclerView를 활용한 효율적인 화면 구성 방식을 깊이 있게 학습했습니다.",
         img: "https://images.unsplash.com/photo-1494390248081-4e521a5940db?auto=format&fit=crop&w=800&q=80"
